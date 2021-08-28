@@ -1,13 +1,13 @@
 import java.util.*;
 //Written by Ashley Bickham
 
-public class BinarySearch{
+public class BinarySearch implements SearchBehavior{
     public boolean contains(ArrayList<String> data, String item) {
         int size = data.size(); 
         if (size > 1) {
             Collections.sort(data);
         }
-        
+
         // referenced this site for binary search implementation: https://www.tutorialspoint.com/data_structures_algorithms/binary_search_algorithm.htm
         int left = 0;
         int right = size - 1; 
