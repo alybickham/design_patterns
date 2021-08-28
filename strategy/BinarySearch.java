@@ -15,10 +15,10 @@ public class BinarySearch implements SearchBehavior{
 
         while (left < (right + 1)){
             mid = left + right / 2;
-            if (data.get(mid).compareTo(item) < 0) {
+            if (data.get(mid).toLowerCase().compareTo(item.toLowerCase()) < 0) {
                 left = mid + 1;
             }
-            else if (data.get(mid).compareTo(item) > 0) {
+            else if (data.get(mid).toLowerCase().compareTo(item.toLowerCase()) > 0) {
                 right = mid - 1;
             }
             else {

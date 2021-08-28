@@ -1,8 +1,4 @@
-package strategy;
-
 import java.util.ArrayList;
-
-import GuestList;
 
 /**
  * Runs the Guest List Program
