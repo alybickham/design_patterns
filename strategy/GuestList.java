@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class GuestList {
     /**
-     * The name of the Guestlist, allowing for reference to a specific GuestList.
+     * The name of the GuestList, allowing for reference to a specific GuestList.
      */
     private String title;
     /**
@@ -21,7 +21,7 @@ public class GuestList {
 
     /**
      * Creates a GuestList with the indicated title
-     * @param title the name of the GuestList
+     * @param title The name of the GuestList
      */
     public GuestList(String title){
         this.title = title;
