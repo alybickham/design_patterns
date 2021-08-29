@@ -14,7 +14,7 @@ public class BinarySearch implements SearchBehavior{
         int mid = data.size()/2;
 
         while (left < (right + 1)){
-            mid = left + right / 2;
+            mid = left + (right - left) / 2;
             if (data.get(mid).toLowerCase().compareTo(item.toLowerCase()) < 0) {
                 left = mid + 1;
             }
@@ -27,6 +27,6 @@ public class BinarySearch implements SearchBehavior{
         }
 
         return false;
-    }      
-}
+    }
 
+} 
