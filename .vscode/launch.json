@@ -1,0 +1,121 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch BookDriver",
+            "request": "launch",
+            "mainClass": "observer.BookDriver",
+            "projectName": "design_patterns_dc753c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch DuckDriver",
+            "request": "launch",
+            "mainClass": "csce247.adapter.DuckDriver",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoteDriver",
+            "request": "launch",
+            "mainClass": "csce247.command.RemoteDriver",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch MenuDriver",
+            "request": "launch",
+            "mainClass": "csce247.composite.MenuDriver",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch StarbuzzCoffee",
+            "request": "launch",
+            "mainClass": "csce247.decorator.StarbuzzCoffee",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch HomeTheaterDriver",
+            "request": "launch",
+            "mainClass": "csce247.facade.HomeTheaterDriver",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch PizzaDriver",
+            "request": "launch",
+            "mainClass": "csce247.factory.PizzaDriver",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch DinerDriver",
+            "request": "launch",
+            "mainClass": "csce247.iterator.DinerDriver",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnimalDriver",
+            "request": "launch",
+            "mainClass": "csce247.observer.simple.AnimalDriver",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch WeatherStationDriver",
+            "request": "launch",
+            "mainClass": "csce247.observer.weather.WeatherStationDriver",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChocolateDriver",
+            "request": "launch",
+            "mainClass": "csce247.singleton.ChocolateDriver",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch GumballDriver",
+            "request": "launch",
+            "mainClass": "csce247.state.GumballDriver",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch DuckDriver(1)",
+            "request": "launch",
+            "mainClass": "csce247.strategy.DuckDriver",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch StarbuzzCoffee(1)",
+            "request": "launch",
+            "mainClass": "csce247.template.StarbuzzCoffee",
+            "projectName": "DesignPatterns_2964eee5"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListDriver",
+            "request": "launch",
+            "mainClass": "ListDriver",
+            "projectName": "design_patterns_dc753c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListDriver(1)",
+            "request": "launch",
+            "mainClass": "ListDriver"
+        }
+    ]
+}
