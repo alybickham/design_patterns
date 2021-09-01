@@ -1,6 +1,7 @@
 package observer;
+import java.util.*;
 
-public class Customer {
+public class Customer implements Observer {
     
     private Subject subject;
     private String firstName;
@@ -14,7 +15,7 @@ public class Customer {
         this.wishList = new ArrayList<Book>();
     }
 
-    public void update(Book, book) {
+    public void update(Book book) {
         // to do
     }
 

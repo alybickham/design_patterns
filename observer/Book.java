@@ -1,9 +1,12 @@
+package observer;
+
 public class Book {
+   
     private String title;
     private String authorFirstName;
     private String authorLastName;
 
-    public Book (String title, String authorFirstName, String authorLastName) {
+    public Book(String title, String authorFirstName, String authorLastName) {
               this.title = "";
               this.authorFirstName = "";
               this.authorLastName = ""; 
@@ -22,7 +25,7 @@ public class Book {
     }
 
     public String toString(){
-        System.out.println(title + " by: " + authorFirstName + authorLastName);
+        return (title + " by: " + authorFirstName + authorLastName);
     }
     
 }
