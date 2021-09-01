@@ -4,7 +4,7 @@ import java.util.*;
  * Allows the user to implement two different search procedures.
  * @author Ashley Bickham
  */
-public interface SearchBehavior {
+public interface SearchBehavior{
     /**
      * Checks the indicated ArrayList for a target String
      * @param data The ArrayList to be searched
