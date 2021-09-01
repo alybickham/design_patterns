@@ -21,10 +21,14 @@ public class BestSellers implements Subject {
     }
 
     public void notifyObservers(Book book) {
-        // to do
+        for (Observer person : observers) {
+            person.update(book);
+        }
     }
 
     public void addBook(Book book) {
-        //to do
+        
+        bestSellers.add(book);
+        notifyObservers(book);
     }
 }

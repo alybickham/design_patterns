@@ -10,15 +10,21 @@ public class Store implements Observer{
     public Store(Subject subject, String title) {
         this.subject = subject;
         this.title = title;
-        this.bestSellers = new Queue<Book>();
+        this.bestSellers = new Queue<>();
     }
 
     public void update(Book book) {
-        // to do
+        int booksInBestSellers = 0;
+        if (booksInBestSellers > 5) {
+            bestSellers.add(book);
+        }
+        bestSellers.remove();
+        bestSellers.add(book);
     }
 
     public void display() {
-        // to do
+        for ( Book bestSellerBook : bestSellers)
+            System.out.println(bestSellerBook);
     }
 
 }

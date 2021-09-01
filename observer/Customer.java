@@ -16,11 +16,13 @@ public class Customer implements Observer {
     }
 
     public void update(Book book) {
-        // to do
+        wishList.add(book);
     }
 
     public void display(){
-        //to do
+        for (Book wishListBook : wishList) {
+            System.out.println(wishListBook);
+        }
     }
 
 
