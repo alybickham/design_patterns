@@ -5,12 +5,12 @@ public class Store implements Observer{
     
     private Subject subject;
     private String title;
-    private Queue <Book> bestSellers;
+    private Queue<Book> bestSellers;
 
-    public Store(Subject subject, String title) {
+    public Store(Subject subject) {
         this.subject = subject;
-        this.title = title;
         bestSellers = new Queue<Book>();
+
     }
 
     public void update(Book book) {

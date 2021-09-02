@@ -21,8 +21,9 @@ public class BestSellers implements Subject {
     }
 
     public void notifyObservers(Book book) {
-        for (Observer person : observers) {
-            person.update(book);
+        for (Observer i : observers) {
+            i.update(book);
+            System.out.println(book);
         }
     }
 
@@ -31,4 +32,5 @@ public class BestSellers implements Subject {
         bestSellers.add(book);
         notifyObservers(book);
     }
+    
 }
