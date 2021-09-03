@@ -8,9 +8,9 @@ public class BestSellers implements Subject {
     private ArrayList<Book> bestSellers;
 
     public BestSellers() {
-        this.observers = new ArrayList<Observer>();
-        ArrayList<Book> bestSellersList = new ArrayList<>();
-        this.bestSellers = bestSellersList;
+        this.observers = new ArrayList<>();
+        ArrayList<Book> bestSellers = new ArrayList<>();
+        this.bestSellers = bestSellers;
     }
 
     public void registerObserver(Observer observer) {
@@ -24,7 +24,6 @@ public class BestSellers implements Subject {
     public void notifyObservers(Book book) {
         for (Observer i : observers) {
             i.update(book);
-            System.out.println(book);
         }
     }
 

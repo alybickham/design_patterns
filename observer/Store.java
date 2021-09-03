@@ -10,20 +10,18 @@ public class Store implements Observer{
     public Store(Subject subject) {
         this.subject = subject;
         bestSellers = new LinkedList<Book>();
-
+        subject.registerObserver(this);
     }
 
     public void update(Book book) {
         int booksInBestSellers = 0;
-        if (booksInBestSellers > 5) {
+        if (booksInBestSellers >= 5) {
             bestSellers.remove();
             bestSellers.add(book);
-            System.out.println(book);
             booksInBestSellers++;
         }
         else {
             bestSellers.add(book);
-            System.out.println(book);
             booksInBestSellers++;
         }
 
@@ -31,8 +29,10 @@ public class Store implements Observer{
 
     public void display() {
         System.out.println("Top 5 Best Sellers:");
-        for ( Book bestSellerBook : bestSellers)
+        for ( Book bestSellerBook : bestSellers) {
             System.out.println(bestSellerBook);
+        }
+        System.out.println();
     }
 
 }

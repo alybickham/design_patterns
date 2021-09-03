@@ -7,9 +7,9 @@ public class Book {
     private String authorLastName;
 
     public Book(String title, String authorFirstName, String authorLastName) {
-              this.title = "";
-              this.authorFirstName = "";
-              this.authorLastName = ""; 
+              this.title = title;
+              this.authorFirstName = authorFirstName;
+              this.authorLastName = authorLastName;
     }
 
     public String getTitle() {
@@ -25,7 +25,7 @@ public class Book {
     }
 
     public String toString(){
-        return (" - " + title + " by: " + authorFirstName + authorLastName);
+        return (" - " + title + " by: " + authorFirstName + " " + authorLastName);
     }
     
 }
