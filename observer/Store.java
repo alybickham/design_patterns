@@ -14,15 +14,12 @@ public class Store implements Observer{
     }
 
     public void update(Book book) {
-        int booksInBestSellers = 0;
-        if (booksInBestSellers >= 5) {
+        if (bestSellers.size() >= 5) {
             bestSellers.remove();
             bestSellers.add(book);
-            booksInBestSellers++;
         }
         else {
             bestSellers.add(book);
-            booksInBestSellers++;
         }
 
     }
