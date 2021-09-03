@@ -20,6 +20,7 @@ public class Customer implements Observer {
     }
 
     public void display(){
+        System.out.println("Wish List:");
         for (Book wishListBook : wishList) {
             System.out.println(wishListBook);
         }

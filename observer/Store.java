@@ -9,7 +9,7 @@ public class Store implements Observer{
 
     public Store(Subject subject) {
         this.subject = subject;
-        bestSellers = new Queue<Book>();
+        bestSellers = new LinkedList<Book>();
 
     }
 
@@ -18,11 +18,19 @@ public class Store implements Observer{
         if (booksInBestSellers > 5) {
             bestSellers.remove();
             bestSellers.add(book);
+            System.out.println(book);
+            booksInBestSellers++;
         }
-        else {bestSellers.add(book);}
+        else {
+            bestSellers.add(book);
+            System.out.println(book);
+            booksInBestSellers++;
+        }
+
     }
 
     public void display() {
+        System.out.println("Top 5 Best Sellers:");
         for ( Book bestSellerBook : bestSellers)
             System.out.println(bestSellerBook);
     }

@@ -9,7 +9,8 @@ public class BestSellers implements Subject {
 
     public BestSellers() {
         this.observers = new ArrayList<Observer>();
-        this.bestSellers = new ArrayList<Book>();
+        ArrayList<Book> bestSellersList = new ArrayList<>();
+        this.bestSellers = bestSellersList;
     }
 
     public void registerObserver(Observer observer) {
@@ -28,7 +29,6 @@ public class BestSellers implements Subject {
     }
 
     public void addBook(Book book) {
-        
         bestSellers.add(book);
         notifyObservers(book);
     }
