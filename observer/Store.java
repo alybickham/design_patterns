@@ -10,7 +10,7 @@ public class Store implements Observer{
     public Store(Subject subject) {
         this.subject = subject;
         bestSellers = new LinkedList<Book>();
-        subject.registerObserver(this);
+        this.subject.registerObserver(this);
     }
 
     public void update(Book book) {

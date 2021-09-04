@@ -13,7 +13,7 @@ public class Customer implements Observer {
         this.firstName = firstName;
         this.lastName = lastName;
         this.wishList = new ArrayList<Book>();
-        subject.registerObserver(this);
+        this.subject.registerObserver(this);
     }
 
     public void update(Book book) {
