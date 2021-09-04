@@ -2,13 +2,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Book",
-            "request": "launch",
-            "mainClass": "observer.Book",
-            "projectName": "design_patterns_dc753c2"
-        },
-        {
-            "type": "java",
             "name": "Launch BookDriver",
             "request": "launch",
             "mainClass": "observer.BookDriver",
