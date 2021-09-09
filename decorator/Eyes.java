@@ -3,11 +3,13 @@ package decorator;
 public class Eyes extends CharacterDecorator{
     
     public Eyes(Character character){
-        // to do
+        super(character);
+        // this.character = character;
+        customize();
     }
 
     public void customize(){
-        // to do
+        sections.set(3, " |  o  o  |");
     }
 
 }

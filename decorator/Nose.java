@@ -3,11 +3,13 @@ package decorator;
 public class Nose extends CharacterDecorator{
     
     public Nose(Character character){
-        // to do
+        super(character);
+        // this.character = character;
+        customize();
     }
 
     public void customize(){
-        // to do
+        sections.set(4," |   >    |");
     }
 
 }

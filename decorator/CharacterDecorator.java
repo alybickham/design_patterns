@@ -1,14 +1,16 @@
 package decorator;
-import java.util.*;
 
-public abstract class CharacterDecorator{
+public abstract class CharacterDecorator extends Character{
     protected Character character;
 
     public CharacterDecorator(Character character){
-        // to do
+        // super();
+        this.character = character;
+        for (int i = 0; i<character.sections.size(); i++){
+            this.character.sections.set(i,character.sections.get(i));
+        }
     }
 
     public void customize(){
-        // to do
     }
 }

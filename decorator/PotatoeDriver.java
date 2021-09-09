@@ -1,3 +1,5 @@
+package decorator;
+
 /**
  * Runs the Potoatoe Head Program
  */
