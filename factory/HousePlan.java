@@ -9,38 +9,51 @@ public abstract class HousePlan extends HousePlanFactory{
     private int squareFeet;
 
     public HousePlan(int numRooms, int numWindows, int squareFeet){
-        // to do
+        this.numRooms = numRooms;
+        this.numWindows = numWindows;
+        this.squareFeet = squareFeet;
+        this.materials = new ArrayList<String>();
+        this.features = new ArrayList<String>();
     }
 
-    protected void setMaterials(){
-        //to do
-    }
+    protected abstract void setMaterials();
 
-    protected void setFeatures(){
-        //to do
-    }
+    protected abstract void setFeatures();
 
     public ArrayList<String> getMaterials(){
-        //to do
+        return materials;
     }
 
     public ArrayList<String> getFeatures(){
-        //to do
+        return features;
     }
 
     public int getNumRooms(){
-        // to do
+        return numRooms;
     }
 
-    public int getNumWindows(
-        // to do
-    )
+    public int getNumWindows(){
+        return numWindows;
+    }
 
     public int getSquareFeet(){
-        // to do        
+        return squareFeet;        
     }
 
     public String toString(){
-        // to do
+        String materialsString = "";
+        String featuresString = "";
+        for (int i = 0; i < materials.size(); i++){
+            materialsString += "- " + materials.get(i) + "\n";
+        }
+        for (int i = 0; i < materials.size(); i++){
+            materialsString += "- " + materials.get(i) + "\n";
+        }
+
+        return "Square Feet: " + squareFeet + "\n" +
+                "Room(s): " + numRooms + "\n" +
+                "Windows: " + numWindows + "\n\n" +
+                "Materials: " + materialsString  + "\n\n" +
+                "Features: " + featuresString  + "\n\n";
     }
 }

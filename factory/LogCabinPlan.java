@@ -2,19 +2,24 @@ package factory;
 
 public class LogCabinPlan extends HousePlan{
     public LogCabinPlan(){
-        // to do
+        super(2, 10, 1800);
     }
 
     protected void setMaterials(){
-        // to do
+        this.materials.add("Log Siding");
+        this.materials.add("Board and Battern Siding");
+        this.materials.add("White Pine");
     }
 
     protected void setFeatures(){
-        // to do
+        this.features.add("Timbered Roof");
+        this.features.add("High Insulation");
+        this.features.add("Rustic Effect");
     }
 
     public String toString(){
-        // to do
+        super.toString();
+        return "Log Cabin";
     }
 
 }

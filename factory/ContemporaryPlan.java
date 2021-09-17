@@ -1,19 +1,26 @@
 package factory;
 
-public class ContemporaryPlan {
+public class ContemporaryPlan extends HousePlan{
     public ContemporaryPlan(){
-        // to do
+        super(5, 40, 3000);
     }
 
     protected void setMaterials(){
-        // to do
+        this.materials.add("Ceramics");
+        this.materials.add("High-Strength Alloys");
+        this.materials.add("Composites");
     }
 
     protected void setFeatures(){
-        // to do
+        this.features.add("Oversized Windows");
+        this.features.add("Unconventional Roofs");
+        this.features.add("Minimalism");
+        this.features.add("Open Floor Plan");
     }
 
     public String toString(){
-        // to do
+        super.toString();
+        return "Comtemporary Home";
     }
+
 }
