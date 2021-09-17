@@ -42,18 +42,21 @@ public abstract class HousePlan extends HousePlanFactory{
 
     public String toString(){
         String materialsString = "";
+
         String featuresString = "";
+
         for (int i = 0; i < materials.size(); i++){
-            materialsString += "- " + materials.get(i) + "\n";
-        }
-        for (int i = 0; i < materials.size(); i++){
-            materialsString += "- " + materials.get(i) + "\n";
+            materialsString = materialsString + "- " + materials.get(i) + "\n";
         }
 
-        return "Square Feet: " + squareFeet + "\n" +
-                "Room(s): " + numRooms + "\n" +
-                "Windows: " + numWindows + "\n\n" +
-                "Materials: " + materialsString  + "\n\n" +
-                "Features: " + featuresString  + "\n\n";
+        for (int i = 0; i < features.size(); i++){
+            featuresString = featuresString +  "- " + features.get(i) + "\n";
+        }
+        
+        return ("Square Feet: " + squareFeet + "\n" +
+        "Room(s): " + numRooms + "\n" +
+        "Windows: " + numWindows + "\n\n" +
+        "Materials:\n" + materialsString  + "\n" +
+        "Features:\n" + featuresString  + "\n");
     }
 }

@@ -3,25 +3,26 @@ package factory;
 public class TinyHomePlan extends HousePlan {
     public TinyHomePlan(){
         super(1, 5, 200);
+        setMaterials();
+        setFeatures();
     }
 
     protected void setMaterials(){
-        this.materials.add("Lumber");
-        this.materials.add("Insulation");
-        this.materials.add("Metal Roofing");
-        this.materials.add("Hardware");
+        super.materials.add("Lumber");
+        super.materials.add("Insulation");
+        super.materials.add("Metal Roofing");
+        super.materials.add("Hardware");
     }
 
     protected void setFeatures(){
-        this.features.add("Natural Light");
-        this.features.add("Creative Storage");
-        this.features.add("Multipurpose areas");
-        this.features.add("Multi-use applications");
+        super.features.add("Natural Light");
+        super.features.add("Creative Storage");
+        super.features.add("Multipurpose areas");
+        super.features.add("Multi-use applications");
     }
 
     public String toString(){
-        super.toString();
-        return "Tiny House";
+        return ("Tiny House\n" + super.toString());
     }
 
 }
