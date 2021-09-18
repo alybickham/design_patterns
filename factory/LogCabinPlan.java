@@ -6,7 +6,7 @@ package factory;
  */
 public class LogCabinPlan extends HousePlan{
     /**
-     * constructs a HousePlan using provided values for a Log Cabin
+     * Constructs a HousePlan using predetermined values for a Log Cabin
      */
     public LogCabinPlan(){
         super(2, 10, 1800);
@@ -19,7 +19,7 @@ public class LogCabinPlan extends HousePlan{
      */
     protected void setMaterials(){
         super.materials.add("Log Siding");
-        super.materials.add("Board and Battern Siding");
+        super.materials.add("Board and Batten Siding");
         super.materials.add("White Pine");
     }
 

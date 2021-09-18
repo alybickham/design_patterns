@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 /**
  * Contains all information in a HousePlan
+ * @author Ashley Bickham
  */
 public abstract class HousePlan extends HousePlanFactory{
     protected ArrayList<String> materials;
@@ -13,8 +14,8 @@ public abstract class HousePlan extends HousePlanFactory{
 
     /**
      * Constructs a HousePlan using the inputs
-     * @param numRooms An integer representation of the number of Rooms for the HousePlan
-     * @param numWindows An integer representation of the number of Windows for the HousePlan
+     * @param numRooms An integer representation of the number of rooms for the HousePlan
+     * @param numWindows An integer representation of the number of windows for the HousePlan
      * @param squareFeet An integer representation of size of the HousePlan in square feet
      */
     public HousePlan(int numRooms, int numWindows, int squareFeet){
@@ -26,17 +27,17 @@ public abstract class HousePlan extends HousePlanFactory{
     }
 
     /**
-     * Sets the Materials for the HousePlan
+     * Sets the materials for the HousePlan
      */
     protected abstract void setMaterials();
 
     /**
-     * Sets the Features for the HousePlan
+     * Sets the features for the HousePlan
      */
     protected abstract void setFeatures();
 
     /**
-     * Provides the Materials of the HousePlan
+     * Provides the materials of the HousePlan
      * @return The String ArrayList of the materials
      */
     public ArrayList<String> getMaterials(){
@@ -44,7 +45,7 @@ public abstract class HousePlan extends HousePlanFactory{
     }
 
     /**
-     * Provides the Features of the HousePlan
+     * Provides the features of the HousePlan
      * @return The String ArrayList of the features
      */
     public ArrayList<String> getFeatures(){
@@ -61,7 +62,7 @@ public abstract class HousePlan extends HousePlanFactory{
 
     /**
      * Provides the number of windows in the Houseplan
-     * @return An iteger representation of the number of windows in the HousePlan
+     * @return An integer representation of the number of windows in the HousePlan
      */
     public int getNumWindows(){
         return numWindows;

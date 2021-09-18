@@ -5,7 +5,7 @@ package factory;
  */
 public class ContemporaryPlan extends HousePlan{
     /**
-     * constructs a HousePlan using provided values for a Contemporary House
+     * Constructs a HousePlan using predetermined values for a Contemporary House
      */
     public ContemporaryPlan(){
         super(5, 40, 3000);

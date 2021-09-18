@@ -6,7 +6,7 @@ package factory;
  */
 public class TinyHomePlan extends HousePlan {
     /**
-     * constructs a HousePlan using provided values for a Tiny Home
+     * constructs a HousePlan using predetermined values for a Tiny Home
      */
     public TinyHomePlan(){
         super(1, 5, 200);

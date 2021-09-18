@@ -1,7 +1,7 @@
 package factory;
 
 /**
- * Allows for creation of HousePlan by via String input, simplifies construction of any HousePlan by only requiring a String input
+ * Allows for creation of HousePlan via String input, simplifies construction of any HousePlan by only requiring a String input
  * @author Ashley Bickham
  */
 public class HousePlanFactory {
