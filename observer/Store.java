@@ -7,19 +7,8 @@ import java.util.*;
  */
 public class Store implements Observer{
     
-    /**
-     * Allows for the Customer to observe a target object
-     */
     private Subject subject;
-
-    /**
-     * The title of the Store
-     */
     private String title;
-    
-    /**
-     * A Queue of the bestseller Books
-     */
     private Queue<Book> bestSellers;
 
     /**

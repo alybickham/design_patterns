@@ -7,24 +7,9 @@ import java.util.*;
  */
 public class Customer implements Observer {
     
-    /**
-     * Allows for the Customer to register the object the Customer is observing
-     */
     private Subject subject;
-
-    /**
-     * The Customer's first name
-     */
     private String firstName;
-    
-    /**
-     * The Customer's last name
-     */
     private String lastName;
-    
-    /**
-     * The Customer's wishlist of books
-     */
     private ArrayList<Book> wishList;
 
     /**

@@ -6,14 +6,7 @@ import java.util.*;
  * @author Ashley Bickham
  */
 public class BestSellers implements Subject {
-    /**
-     * An ArrayList of the Observers
-     */
     private ArrayList<Observer> observers;
-    
-    /**
-     * An ArrayList of the Bestseller books
-     */
     private ArrayList<Book> bestSellers;
 
     /**

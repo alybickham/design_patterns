@@ -6,19 +6,8 @@ package observer;
  */
 public class Book {
    
-    /**
-     * The title of the Book
-     */
     private String title;
-    
-    /**
-     * The Book author's first name
-     */
     private String authorFirstName;
-    
-    /**
-     * The Book author's last name
-     */
     private String authorLastName;
 
     /**
