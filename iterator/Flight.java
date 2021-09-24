@@ -7,26 +7,45 @@ public class Flight {
     int transfers;
 
     public Flight(String flightNum, String from, String to, int duration, int transfers){
-        // to do
+        this.flightNum = flightNum;
+        this.from = from;
+        this.to = to;
+        this.duration = duration;
+        this.transfers = transfers;
     }
 
     public String getFrom(){
-        // to do
+        return from;
     }
 
     public String getTo(){
-        // to do
+        return to;
     }
 
     public int getDuration(){
-        // to do
+        return duration;
     }
 
     public int getNumTransfers(){
-        // to do
+        return transfers;
     }
 
-    public toString(){
-        // to do
+    public String toString(){
+        final int HOURINMINS = 60;
+        String transferType;
+        if (getNumTransfers() == 0) {
+            transferType = "Direct Flight\n";
+        }
+        else if (getNumTransfers() == 1) {
+            transferType = getNumTransfers() + " Transfer\n";
+        }
+        else {
+            transferType = getNumTransfers() + " Transfers\n";
+        }
+        return "FlightNumber: " + flightNum + 
+                "\nFrom: " + from + 
+                "\nTo: " + to +
+                "\nDuration: " + (duration / HOURINMINS) + " hours " + (duration % HOURINMINS) + " minutes\n" +
+                transferType;
     }
 }
