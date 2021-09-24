@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AirlineDriver",
+            "request": "launch",
+            "mainClass": "AirlineDriver",
+            "projectName": "design_patterns_dc753c2"
+        },
+        {
+            "type": "java",
             "name": "Launch HousePlanDriver",
             "request": "launch",
             "mainClass": "factory.HousePlanDriver",

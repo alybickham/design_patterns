@@ -42,10 +42,10 @@ public class Flight {
         else {
             transferType = getNumTransfers() + " Transfers\n";
         }
-        return "FlightNumber: " + flightNum + 
-                "\nFrom: " + from + 
+        return "Flight Number: " + flightNum +
+                "\nFrom: " + from +
                 "\nTo: " + to +
-                "\nDuration: " + (duration / HOURINMINS) + " hours " + (duration % HOURINMINS) + " minutes\n" +
+                "\nDuration: " + (duration / HOURINMINS) + " hour(s) " + (duration % HOURINMINS) + " minute(s)\n" +
                 transferType;
     }
 }
