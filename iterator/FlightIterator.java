@@ -13,7 +13,10 @@ public class FlightIterator implements Iterator {
     }
 
     public Flight next(){
-        Flight flight = flights[position++];
-        return flight;
+        if (hasNext()) {
+            Flight flight = flights[position++];
+            return flight;
+        }
+        return null;
     }
 }
