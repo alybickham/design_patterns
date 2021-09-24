@@ -1,16 +1,19 @@
-public class FlightIterator {
+import java.util.Iterator;
+
+public class FlightIterator implements Iterator {
     private Flight[] flights;
-    private int position;
+    private int position = 0;
 
     public FlightIterator(Flight[] flights) {
-        // to do
+        this.flights = flights;
     }
 
     public boolean hasNext(){
-        // to do
+        return ( position < flights.length && flights[position] != null);
     }
 
     public Flight next(){
-        // to do
+        Flight flight = flights[position++];
+        return flight;
     }
 }
