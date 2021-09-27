@@ -28,7 +28,6 @@ public class Airline {
  public void addFlight(String flightNum, String from, String to, int duration, int transfers) {
     Flight newFlight = new Flight(flightNum, from, to, duration, transfers);
     if (size >= flights.length) {
-        System.out.println(size);
         growArray(flights);
     }
     flights[size++] = newFlight;
