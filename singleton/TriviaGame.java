@@ -42,7 +42,7 @@ public class TriviaGame {
             }
         }
         while (play);
-        System.out.println("You won " + wins + " games!\nGoodbye!");
+        System.out.println("You won " + wins + " game(s)!\nGoodbye!");
 
     }
 
@@ -58,8 +58,7 @@ public class TriviaGame {
             System.out.println("Yay ^^ You got it right!");
         }
         else {
-            System.out.println("You got it wrong!\n" +
-                                "The correct answer is " + currentQuestion.getCorrectAnswerString());
+            System.out.println("You got it wrong!\nThe correct answer is " + currentQuestion.getCorrectAnswerString());
 
         }
         return retVal;
