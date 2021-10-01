@@ -1,12 +1,19 @@
 import java.util.*;
-public class TriviaGame {
 
+/**
+ * Creates and regulates the Trivia Game
+ * @author Ashley Bickham
+ */
+public class TriviaGame {
     private static TriviaGame triviaGame ;
     private int score;
     private Random rand;
     private Scanner reader;
     private ArrayList<Question> questions;
 
+    /**
+     * Creates the Trivia Game, setting the instance variables
+     */
     private TriviaGame(){
         score = 0;
         questions = new ArrayList<>(DataLoader.getTriviaQuestions());
@@ -14,6 +21,10 @@ public class TriviaGame {
         rand = new Random();
     }
 
+    /**
+     * Creates an instance of Trivia Game, ensuring only one instance is created
+     * @return a TriviaGame
+     */
     public static TriviaGame getInstance(){
         if (triviaGame == null) {
             System.out.println("Creating a Trivia Game!");
@@ -22,10 +33,13 @@ public class TriviaGame {
         return triviaGame;
     }
 
+    /**
+     * Begins and controls the game program
+     */
     public void play(){
         boolean play = true;
         int wins = 0;
-        do {
+        while (play){
             System.out.print("(P)lay or (Q)uit: ");
             String input = reader.next();
             reader.nextLine();
@@ -41,11 +55,14 @@ public class TriviaGame {
                 System.out.println("Invalid Input\n");
             }
         }
-        while (play);
         System.out.println("You won " + wins + " game(s)!\nGoodbye!");
 
     }
 
+    /**
+     * Plays a round of the game program
+     * @return A boolean representation of the round outcome: true if the user won the round and false if not
+     */
     private boolean playRound() {
         int questionIndex = rand.nextInt(questions.size());
         Question currentQuestion = questions.get(questionIndex);
