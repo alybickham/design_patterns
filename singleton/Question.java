@@ -14,7 +14,7 @@ public class Question {
         for (int i = 0; i < answers.length; i++) {
             answerOptions += (i+1) + ". " + answers[i] + "\n"; 
         }
-        return question + "\n" + answerOptions + "\n";
+        return question + "\n" + answerOptions;
 
     }
 

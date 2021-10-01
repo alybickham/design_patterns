@@ -49,19 +49,23 @@ public class TriviaGame {
     private boolean playRound() {
         int questionIndex = rand.nextInt(questions.size());
         Question currentQuestion = questions.get(questionIndex);
-        System.out.println(questions.get(questionIndex) + "\nEnter Answer: ");
-
-        // TO DO MAKE INPUT STRING, PARSE INT FROM STRING, ERROR CASE FOR INVALID INPUT
+        System.out.print(questions.get(questionIndex) + "Enter Answer: ");
         int userAnswer = reader.nextInt();
         reader.nextLine();
-        boolean retVal = currentQuestion.isCorrect(userAnswer);
-
-        if (retVal) {
-            System.out.println("Yay ^^ You got it right!");
+        final int NUMANSWCHOICES = 4;
+        boolean retVal = false;
+        if (userAnswer > NUMANSWCHOICES){
+            System.out.println("Invalid Input\n");
         }
         else {
-            System.out.println("You got it wrong!\nThe correct answer is " + currentQuestion.getCorrectAnswerString());
+            retVal = currentQuestion.isCorrect(userAnswer);
+            if (retVal) {
+                System.out.println("Yay ^^ You got it right!\n");
+            }
+            else {
+                System.out.println("You got it wrong!\nThe correct answer is " + currentQuestion.getCorrectAnswerString()+"\n");
 
+            }
         }
         return retVal;
     }
