@@ -4,21 +4,32 @@ public class Question {
     private int correctAnswer;
 
     public Question(String question, String ans1, String ans2, String ans3, String ans4, int correctAnswer){
-        // to do
+        this.question = question;
+        this.answers = new String[]{ans1, ans2, ans3, ans4};
     }
 
     public String toString(){
-        // to do
-        return String;
+        String answerOptions = "";
+        for (int i = 0; i < answers.length; i++) {
+            answerOptions += (i+1) + ". " + answers[i] + "\n"; 
+        }
+        return question + "\n" + answerOptions + "\n" + 
+        "\nCorrect Answer Index is: " + correctAnswer + 
+        "\ncorrectAnswer list Number: " + (correctAnswer+1) + 
+        "\nAnswer at index: " + answers[correctAnswer];
+
     }
 
     public boolean isCorrect(int userAnswer) {
-        // to do
-        return true;
+        if (userAnswer == (correctAnswer+1)) {
+            return true;
+        } 
+        else {
+        return false;
+        }
     }
 
-    public String getCorrectAnsweString() {
-        // to do
-        return correctAnswer;
+    public String getCorrectAnswerString() {
+        return answers[correctAnswer];
     }
  }
