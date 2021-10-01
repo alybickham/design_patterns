@@ -50,6 +50,8 @@ public class TriviaGame {
         int questionIndex = rand.nextInt(questions.size());
         Question currentQuestion = questions.get(questionIndex);
         System.out.println(questions.get(questionIndex) + "\nEnter Answer: ");
+
+        // TO DO MAKE INPUT STRING, PARSE INT FROM STRING, ERROR CASE FOR INVALID INPUT
         int userAnswer = reader.nextInt();
         reader.nextLine();
         boolean retVal = currentQuestion.isCorrect(userAnswer);
