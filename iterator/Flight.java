@@ -1,3 +1,5 @@
+package iterator;
+
 /**
  * A Flight object, containing all Flight information
  * @author Ashley Bickham

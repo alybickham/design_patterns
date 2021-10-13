@@ -1,3 +1,5 @@
+package singleton;
+
 /**
  * Holds the various questions to be used in th program
  * @author Ashley Bickham
