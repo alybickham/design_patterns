@@ -1,3 +1,5 @@
+package iterator;
+
 /**
  * An airline object containing a title, array of Flights, and a size
  * @author Ashley Bickham
