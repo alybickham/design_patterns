@@ -8,6 +8,9 @@ public class ArithmeticGame {
     private int score;
     private Scanner reader;
 
+    /**
+     * Creates a Arithmetic Game, setting an initial score of 0
+     */
     public ArithmeticGame(){
         easyState = new Easy(this);
         mediumState = new Medium(this);
@@ -17,6 +20,9 @@ public class ArithmeticGame {
         score = 0;
     }
 
+    /**
+     * Provides the user with an arithmetic problem and tabulates the score and game difficulty based off the answers
+     */
     public void pressQuestionButton(){
         int num1 = state.getNum();
         int num2 = state.getNum();
@@ -42,18 +48,34 @@ public class ArithmeticGame {
         }
     }
 
+    /**
+     * Sets the game's state (difficulty)
+     * @param state The state (difficulty) to be changed to
+     */
     public void setState(State state) {
         this.state = state;
     }
 
+    /**
+     * Provides the object's easy state/difficulty
+     * @return the easy state/difficulty
+     */
     public State getEasyState(){
         return easyState;
     }
 
+    /**
+     * Provides the object's medium state/difficulty
+     * @return the medium state/difficulty
+     */
     public State getMediumState(){
         return mediumState;
     }
 
+    /**
+     * Provides the object's hard state/difficulty
+     * @return the hard state/difficulty
+     */
     public State getHardState(){
         return hardState;
     }
