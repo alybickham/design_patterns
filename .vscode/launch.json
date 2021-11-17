@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Easy",
+            "request": "launch",
+            "mainClass": "Easy",
+            "projectName": "design_patterns_dc753c2"
+        },
+        {
+            "type": "java",
             "name": "Launch GameDriver",
             "request": "launch",
             "mainClass": "GameDriver",
