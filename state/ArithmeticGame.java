@@ -27,7 +27,7 @@ public class ArithmeticGame {
         int num1 = state.getNum();
         int num2 = state.getNum();
         String op = state.getOperation();
-        System.out.println(num1 + " " + op + " " + num2 +": " );
+        System.out.print(num1 + " " + op + " " + num2 +": " );
         int ans = Integer.parseInt(reader.nextLine());
         if ((op.equals("+") && ans == (num1+num2)) || (op.equals("-") && ans == (num1-num2)) ||
             (op.equals("*") && ans == (num1*num2)) || (op.equals("/") && ans == (num1/num2))) {
