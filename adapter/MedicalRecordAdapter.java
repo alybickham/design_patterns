@@ -56,10 +56,10 @@ public class MedicalRecordAdapter implements MedicalRecord{
             Integer.parseInt(dateNums[1].trim()),
             Integer.parseInt(dateNums[0].trim()));
 
-            String wellVisitString = visitItems[1].substring(visitItems[1].indexOf(":")).trim();
+            String wellVisitString = visitItems[1].substring(visitItems[1].indexOf(":")+1).trim();
             boolean well = wellVisitString.toLowerCase().equals("true");
 
-            String description = visitItems[1].substring(visitItems[2].indexOf(":")).trim();
+            String description = visitItems[2].substring(visitItems[2].indexOf(":")+1);
 
             ret.add(new Visit(date, well, description));
         }
