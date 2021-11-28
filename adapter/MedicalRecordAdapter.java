@@ -54,11 +54,12 @@ public class MedicalRecordAdapter implements MedicalRecord{
         }
         return Gender.MALE;
     }
+
     /**
-     * Add's a visit to the patient's medical history
+     * Adds a visit to the patient's medical history
      * @param date The date of the visit
      * @param well Relays whether the visit was a wellness visit (true) or a sick vist (false)
-     * @param description Relavant comments for the visit
+     * @param description Relevant comments for the visit
      */
     public void addVisit(Date date, boolean well, String description){
         String item = "";
@@ -144,10 +145,6 @@ public class MedicalRecordAdapter implements MedicalRecord{
                 result += visit.toString() + "\n";
             }
         }
-
         return result;
     }
-
-
-
 }
