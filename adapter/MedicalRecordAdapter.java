@@ -62,14 +62,7 @@ public class MedicalRecordAdapter implements MedicalRecord{
      * @param description Relevant comments for the visit
      */
     public void addVisit(Date date, boolean well, String description){
-        String item = "";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("E dd, MM, yyyy");
-
-        item += "Visit: " + simpleDateFormat.format(date) + "\n";
-        item += "Well visit: " + well + "\n";
-        item += "Comments: " + description +  "\n";
-
-        record.getHistory().add(item);
+        record.addHistory(date, well, description);
     }
 
     /**
